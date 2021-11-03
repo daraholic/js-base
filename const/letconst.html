@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 想一次設很多變數的比較簡化的寫法:
+        let student1="amy",
+            student2="bob",
+            student3="jack";
+
+        console.log(student1)
+        console.log(student2)
+        console.log(student3)
+
+        // let 變數
+        // 可重複宣告
+        let num1 = 100;
+        console.log("num1="+num1);
+        num1=200;
+        console.log("num1="+num1);
+
+        // const 常數
+        // 不可重複宣告
+        // 如果你重複宣告就會出現 Uncaught SyntaxError: 
+        // Identifier 'num2' has already been declared
+        const num2 = 100;
+        console.log("num2="+num2);
+        const pi =3014159;
+        // const num2 = 100;
+    </script>
+    <!-- ctrl +  shift + H 取代-->
+
+</body>
+
+</html>

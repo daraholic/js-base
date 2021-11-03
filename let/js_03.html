@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // input存款
+        // input是否提款
+        // input 是 提多少?
+        // 剩下多少?
+        let deposit = parseInt(prompt("存款有多少?",0));
+        let option = prompt("1.轉帳 2.提款",0);
+        if (option ==2){
+            let money = parseInt(prompt("提多少錢?",0));
+            if(deposit > money){
+                console.log("已提款" + money);
+            }else{
+                console.log("餘額不足");
+            }
+        }else{
+            console.log("目前系統只能提款");
+        }
+        
+    </script>
+</body>
+</html>

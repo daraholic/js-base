@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // ATM轉帳
+        // input 存款餘額 10000
+        // input 是 提多少? 5000
+        // console 餘額
+        let num1 = prompt("存款金額?", 0);
+        let num2 = prompt("提款金額?", 0);
+        result=num1-num2;
+
+        switch (true) {
+
+            case result == 0:
+                console.log('沒錢可領');
+                break;
+
+            case result > 0:
+                console.log('剩:' + result + '元');
+                break;
+
+            case result < 0:
+                console.log('不好意思錢不夠');
+                break;
+
+            default:
+                console.log('輸入錯誤');        
+        }
+
+        
+        // let num1 = prompt("飲料金額?", 0);
+        // let num2 = prompt("付款金額?", 0);
+        // switch (true) {
+
+        //     case num1 == num2:
+        //         console.log('剛剛好');
+        //         break;
+
+        //     case num1 < num2:
+        //         console.log('找:' + (num2 - num1) + '元');
+        //         break;
+
+        //     case num1 > num2:
+        //         console.log('不好意思錢不夠');
+        //         break;
+
+        //     default:
+        //         console.log('輸入錯誤');
+        //         break;
+        // }
+
+        // let num1 =prompt("飲料金額?", 0);
+        // let num2 =prompt("付款金額?", 0);
+        // if(num1==num2){
+        //     console.log('剛剛好');
+        // }else if(num1<num2){
+        //     console.log('找:'+ (num2-num1)+ '元');
+
+        // }else{
+        //     console.log('不好意思錢不夠');
+        // }
+
+
+        // let num1 = 100;
+        // let num2 = 10;
+        // if(num1>num2){
+        //     console.log('num1>num2');
+        // }else if(num1==num2){
+        //     console.log('num1=num2');
+
+        // }else{
+        //     console.log('num1<num2');
+        // }
+
+        // let num1 = prompt("num1?", 0);
+        // let num2 = prompt("num2?", 0);
+        // if (num1 > num2) {
+        //     console.log("num1 > num2");
+        // } else {
+        //     console.log("num1 < num2");
+        // }
+
+        // let name = prompt("name?", "test");
+        // let number = prompt("number?", 0);
+        // console.log(name + number);
+
+    // alert("hello alert");
+    // console.log("hello console");
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
