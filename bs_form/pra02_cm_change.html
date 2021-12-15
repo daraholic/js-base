@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,36 +7,36 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-</head>
 
+</head>
 <body>
-    <!-- 建立表單 -->
+    <!-- 上課練習:
+    cm轉英寸
+    使用change
+    -->
     <div class="container">
-        <h2>JS FORM SWITCH</h2>
+        <h2>單位換算</h2>
         <form action="" id="myForm">
-            <div class="form-group">
-                <label for="num1">num1:</label>
-                <input type="text" class="form-control" id="num1" placeholder="Enter number" name="uname" required>
-            </div>
-            <div class="form-group">
-                <label for="num2">num2:</label>
-                <input type="text" class="form-control" id="num2" placeholder="Enter number" name="pswd" required>
-            </div>
-            <div class="form-group">
-                <label for="option">option:</label>
-                <input type="text" class="form-control" id="option" name="remember" placeholder="Enter option" required>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-    </div>
-    <hr>
-    <div class="container">
         <div class="row">
-            <div class="col-12">
-                <div class="text-danger" id="resultOutput">Result:</div>
+            <div class="col-6">
+            <div class="form-group">
+                <label for="centimeter">公分:</label>
+                <input type="text" class="form-control" id="cm" placeholder="Enter number" name="cm" required>
+                <p class="text-danger" id="cmErr"></p>
             </div>
         </div>
+            <div class="col-6">
+                <div class="form-group">
+                    <label for="inch">英吋:</label>
+                    <input type="text" class="form-control" id="inch" placeholder="Enter number" name="inch" required>
+                </div>
+                <p class="text-danger" id="cmErr"></p>
+            </div>
+        
+        </div>
+        </form>
     </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -47,9 +46,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
         integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
         crossorigin="anonymous"></script>
-    <script src="./js/main.js">
-
-    </script>
+    <script src="./js/pra02_cm.js"></script>
 </body>
-
 </html>

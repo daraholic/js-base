@@ -1,4 +1,4 @@
-// 拿num1,num2,option這些東西
+// 拿num1,num2,cashDiscount這些東西
 // 方法:用id去抓
 
 // 首先先抓form表單
@@ -8,6 +8,7 @@ const form = document.getElementById('myForm');
 const num1 = document.getElementById('num1');
 const num2 = document.getElementById('num2');
 const option = document.getElementById('option');
+const resultOutput = document.getElementById("resultOutput");
 
 form.addEventListener("submit", function (e) {
   console.log(e);
@@ -18,29 +19,39 @@ form.addEventListener("submit", function (e) {
   console.log(option.value);
   parseIntNum1 = parseInt(num1.value);
   parseIntNum2 = parseInt(num2.value);
-  alert(num1.value + num2.value);
+  // alert(num1.value + num2.value);
+  // 做加減乘除
+  // sw+tab 快捷鍵
+  console.log(option.value);
+  let total = "";
+  switch (option.value) {
+    case "+":
+      total = parseIntNum1 + parseIntNum2;
+      break;
+    case "-":
+      // 大減小
+      let tempNum;
+      if (parseIntNum2 > parseIntNum1) {
+        tempNum = parseIntNum1;
+        parseIntNum1 = parseIntNum2;
+        parseIntNum2 = tempNum;
+      }
+      total = parseIntNum1 - parseIntNum2;
+      break;
+    case "*":
+      total = parseIntNum1 * parseIntNum2;
+      break;
+    case "/":
+      total = parseIntNum1 / parseIntNum2;
+      break;
+    default:
+      alert("default");
+      break;
+  }
+  alert(total);
+  resultOutput.innerText = "Result :" + total;
 });
 
-// 做加減乘除
-// sw+tab 快捷鍵
-console.log(typeof(option.value));
-switch (option.value) {
-  case "+":
-    alert(parseIntNum1 + parseIntNum2);
-    break;
-  case "-":
-    alert(parseIntNum1 - parseIntNum2);
-    break;
-  case "*":
-    alert(parseIntNum1 * parseIntNum2);
-    break;
-  case "/":
-    alert(parseIntNum1 / parseIntNum2);
-    break;
-  default:
-    alert("default");
-    break;
-}
 
 
 
@@ -81,7 +92,7 @@ switch (option.value) {
 //   console.log(calResult);
 
 
-//   pResult.innerText = "Result:" + calResult;
+pResult.innerText = "Result:" + calResult;
 
 // }
 // )
