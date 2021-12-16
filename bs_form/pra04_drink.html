@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <style>
+        .card {
+            width: 100%;
+            height: 40vh;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 上課練習:
+        飲料價格計算
+        咖啡10
+        花茶100
+        珍奶1000
+        input 數量
+        alert共多少元
+    -->
+    <div class="container">
+        <h2 class="mt-10">飲料購買:</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://margaret.tw/wp-content/uploads/2020/07/nEO_IMG_DSC01384.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h4>熱拿鐵 一杯10元</h4>
+                        <p class="card-text">好~想喝拿鐵</p>
+                        <label for="coffeeNum">數量:</label>
+                        <input type="number" class="form-control" id="coffeeNum" placeholder="Enter number" name="chinese"
+                            required>
+                        <p class="text-danger" id="scErr"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://www.japaholic.com/storage/article/images/2016/05/ExRevE1462182350059_debb_1.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h4>花茶 一杯100元</h4>
+                        <p class="card-text">好~香花茶</p>
+                        <label for="teaNum">數量:</label>
+                        <input type="number" class="form-control" id="teaNum" placeholder="Enter number" name="chinese"
+                            required>
+                        <p class="text-danger" id="scErr"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://img.news.ebc.net.tw/EbcNews/news/2019/11/12/1573573502_26061.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h4>珍珠奶茶 一杯1000元</h4>
+                        <p class="card-text">好~美味珍奶</p>
+                        <label for="milkNum">數量:</label>
+                        <input type="number" class="form-control" id="milkNum" placeholder="Enter number" name="chinese"
+                            required>
+                        <p class="text-danger" id="scErr"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-12">
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submitBtn">計算</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div id="result">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+    <script src="./js/pra03_score.js"></script>
+</body>
+
+</html>
